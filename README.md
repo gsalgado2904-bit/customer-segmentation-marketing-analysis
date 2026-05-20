@@ -1,35 +1,39 @@
-# 🧠 Customer Segmentation & Marketing Analysis
+# 🧠 Customer Segmentation & Marketing Analytics
 
 ## 📊 Project Overview
 
-This project performs an Exploratory Data Analysis (EDA) and customer segmentation on a marketing dataset to understand customer behavior, purchasing patterns, and campaign effectiveness.
+This project performs an end-to-end Exploratory Data Analysis (EDA) and customer segmentation on a retail marketing dataset.
 
-The goal is to transform raw customer data into actionable business insights that can support marketing and business strategy decisions.
+The goal is to understand customer behavior, segment customers based on spending patterns, and analyze how different groups interact across purchasing channels.
+
+This analysis translates raw data into actionable business insights for marketing and customer strategy.
 
 ---
 
 ## 🎯 Objectives
 
-- Understand customer demographics and behavior
-- Analyze purchasing patterns across multiple channels
-- Segment customers based on spending behavior
+- Understand customer demographics and income distribution
+- Analyze purchasing behavior across multiple channels
+- Segment customers based on total spending
 - Identify high-value customers
-- Provide actionable business recommendations
+- Evaluate campaign response behavior
+- Provide data-driven business recommendations
 
 ---
 
 ## 📁 Dataset Description
 
-The dataset contains customer information including:
+The dataset includes customer information such as:
 
-- Income and demographics (Age, Marital Status, Education)
-- Household information (Kidhome, Teenhome)
-- Purchase behavior across channels:
+- Income and Age
+- Household structure (Kidhome, Teenhome)
+- Marital status and education level
+- Purchase behavior:
   - Web purchases
   - Store purchases
   - Catalog purchases
 - Marketing campaign responses
-- Product spending categories
+- Total spending metrics
 
 ---
 
@@ -44,75 +48,115 @@ The dataset contains customer information including:
 
 ---
 
-## 📊 Key Analysis Performed
+## 🧹 Data Preparation
 
-### 1. Data Cleaning
-- Removed duplicate records (8.3% of dataset)
-- Validated data structure and types
+- Removed duplicate records (~184 rows)
+- Verified data types and structure
+- Created derived features such as total spending
+- Built customer segments using quantile-based grouping
 
-### 2. Exploratory Data Analysis
-- Income distribution analysis
-- Age and spending behavior analysis
-- Correlation analysis between variables
+---
 
-### 3. Customer Segmentation
-Customers were segmented based on total spending using quantile-based grouping:
-- Low Spenders
-- Mid Spenders
-- High Spenders
+## 👥 Customer Segmentation
 
-### 4. Channel Analysis
-Behavior was analyzed across three main channels:
-- Web Purchases
-- Store Purchases
-- Catalog Purchases
+Customers were divided into three spending-based segments:
+
+- 🟢 Low Spenders
+- 🟡 Mid Spenders
+- 🔴 High Spenders
+
+---
+
+## 📊 Key Visualizations
+
+### 💰 Income Distribution
+![Income Distribution](Images/income_distribution.png)
+
+### 🎂 Age Distribution
+![Age Distribution](Images/age_distribution.png)
+
+### 💸 Total Spending Distribution
+![Total Spending](Images/total_spending_distribution.png)
+
+### 📈 Income vs Total Spending
+![Income vs Spending](Images/income_vs_total_spending.png)
+
+### 🌡️ Correlation Heatmap
+![Correlation Heatmap](Images/correlation_heatmap.png)
+
+### 👥 Customer Segments
+![Segments](Images/spending_segments.png)
+
+---
+
+## 🛒 Customer Behavior by Channel
+
+### 🌐 Web Purchases
+![Web Purchases](Images/web_purchases_by_segment.png)
+
+### 🏬 Store Purchases
+![Store Purchases](Images/store_purchases_by_segment.png)
+
+### 📦 Catalog Purchases
+![Catalog Purchases](Images/catalog_purchases_by_segment.png)
+
+### 🔄 Channel Comparison
+![Channel Comparison](Images/channel_comparison.png)
 
 ---
 
 ## 📈 Key Insights
 
 - Store purchases are the dominant channel across all segments
-- Web purchases grow rapidly in lower segments but stabilize in high-value customers
-- Catalog purchases are strongly associated with high-spending customers
-- High Spenders show significantly higher campaign response rates (25.6%)
+- Web purchases grow rapidly from Low to Mid spenders but stabilize in High Spenders
+- Catalog purchases are strongly associated with High Value customers
+- High Spenders show significantly higher campaign response rates (~25.6%)
 - Income is positively correlated with spending behavior but not the only driver
 
 ---
 
-## 👥 Customer Segments
+## 👤 Customer Profiles
 
 ### 🟢 Low Spenders
 Low income, low engagement, minimal interaction across channels.
 
 ### 🟡 Mid Spenders
-Transitional group with high growth potential and balanced channel usage.
+Transitional segment with strong growth potential and balanced behavior.
 
 ### 🔴 High Spenders
-High income, highly engaged customers, key revenue drivers.
+High income, highly engaged, omnichannel customers and main revenue drivers.
 
 ---
 
 ## 💡 Business Recommendations
 
-- Focus retention strategies on High Spenders (loyalty & personalization)
-- Convert Mid Spenders into High Value customers through targeted campaigns
-- Activate Low Spenders with low-cost digital marketing strategies
-- Strengthen store channel as primary revenue driver
-- Leverage catalog channel for premium customer targeting
+### 🎯 Retention Strategy
+Focus on retaining High Spenders through loyalty programs and personalized offers.
+
+### 🚀 Growth Strategy
+Target Mid Spenders as the main conversion opportunity to increase revenue.
+
+### 📣 Activation Strategy
+Increase engagement of Low Spenders through low-cost digital campaigns.
+
+### 🛍️ Channel Strategy
+- Store = primary revenue channel
+- Web = acquisition & accessibility channel
+- Catalog = premium targeting channel
 
 ---
 
 ## 📌 Final Conclusion
 
-Customer behavior analysis shows that value is driven by both income and engagement patterns across channels.
+Customer value is driven by both income and engagement behavior across channels.
 
-A successful strategy should focus on:
-- Retaining high-value omnichannel customers
-- Growing mid-tier customers
+A successful business strategy should focus on:
+- Retaining high-value customers
+- Converting mid-tier customers
 - Activating low-engagement users
 
 ---
 
 ## 🚀 Author
 
-Built as a portfolio project focused on data analysis, customer segmentation, and marketing insights using Python.
+Data Analyst portfolio project focused on customer segmentation, marketing analytics, and business insights using Python.
